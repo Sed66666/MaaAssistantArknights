@@ -107,10 +107,11 @@ public:
 
     bool back_to_home();
 
+    void clear_info() noexcept;
+
 private:
     cv::Mat get_resized_image_cache() const;
 
-    void clear_info() noexcept;
     void callback(AsstMsg msg, const json::value& details);
     void sync_params();
 
